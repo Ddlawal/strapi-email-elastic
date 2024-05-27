@@ -1,0 +1,53 @@
+{
+  "name": "@strapi/provider-email-elastic",
+  "version": "1.0.0",
+  "description": "Elastic provider for strapi email",
+  "keywords": [
+    "email",
+    "strapi",
+    "elastic"
+  ],
+  "homepage": "https://strapi.io",
+  "bugs": {
+    "url": "https://github.com/Ddlawal/strapi-email-elastic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ddlawal/strapi-email-elastic.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Muhammad Lawal Adamu",
+    "email": "lawaldd@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "Muhammad Lawal Adamu",
+      "email": "lawaldd@gmail.com"
+    }
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "pack-up build",
+    "clean": "run -T rimraf ./dist",
+    "lint": "run -T eslint .",
+    "watch": "pack-up watch"
+  },
+  "dependencies": {
+    "@elasticemail/elasticemail-client-ts-axios": "4.0.22 ",
+    "@strapi/utils": "4.24.2"
+  },
+  "devDependencies": {
+    "@strapi/pack-up": "4.23.0"
+  },
+  "engines": {
+    "node": ">=20.x.x",
+    "npm": ">=10.2.3"
+  }
+}
